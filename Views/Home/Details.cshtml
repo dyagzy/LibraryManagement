@@ -1,0 +1,72 @@
+﻿
+@model HomeDetailsViewModels
+
+
+@{
+ 
+    ViewBag.Title = "Library Details";
+    var PhotoPath = "~/Image/" + (Model.Library.PhotoPath ?? "BasicPhysics.jpg");
+}
+
+<div class="row justify-content-center m-3">
+    <div class="col-sm-8">
+        <div class="card">
+            <div class="card-header">
+                <h1>@Model.Library.NameofAuthor</h1>
+                
+            </div>
+
+            <div class="card">
+                <img class="card-img-top" src="@PhotoPath" asp-append-version="true"/>
+                <h4>Title : @Model.Library.Title</h4>
+                <h4>Department : @Model.Library.Department</h4>
+                @*<h4>Email : @Model.Library.Email</h4>*@
+                <h4>ID : @Model.Library.Id</h4>
+
+
+            </div>
+            <div class=" card-footer text-center">
+
+                <a asp-controller="home" asp-action="index"class="btn btn-primary m-1" >Back</a>
+                <a href="#" class="btn btn-primary m-1">Edit</a>
+                <a href="#" class="btn btn-primary m-1">Delete</a>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+@*<h3>@Model.PageTitle</h3>
+
+
+<div>
+
+    Name : @Model.Library.NameofAuthor
+</div>
+<div>
+    Department :@Model.Library.Department
+
+</div>
+    Title : @Model.Library.Title
+    <div>
+        Id :@Model.Library.Id
+    </div>
+@section Scripts
+
+{
+<script src="~/Js/CustomScript.js"></script>
+}*@

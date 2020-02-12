@@ -7,9 +7,11 @@ namespace LibraryManagement.Models
 {
     public interface ILibraryRepository
     {
-        
 
-
-        Library GetBook(int Id);
+        Library GetBook(int id);
+        IEnumerable<Library> GetAllBooks();
+        Library Add(Library library);
+        Library Delete(int id);
+        Library Update(Library librarychanges);
     }
 }
