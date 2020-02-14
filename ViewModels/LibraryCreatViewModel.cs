@@ -25,6 +25,7 @@ namespace LibraryManagement.ViewModels
         public string Email { get; set; }
 
         public IFormFile Photo { get; set; }
+        
     }
 
     
