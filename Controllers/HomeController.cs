@@ -39,10 +39,19 @@ namespace LibraryManagement.Controllers
         public ViewResult Details(int? id)
 
         {
+            throw new Exception("Error in Details View");
+
+            Library library = _libRepo.GetBook(id.Value);
+            if(library== null)
+            {
+
+                Response.StatusCode = 404;
+                return View("LibraryNotFound" , id.Value);
+            }
 
             HomeDetailsViewModels homeDetailsViewModels = new HomeDetailsViewModels()
             {
-                Library = _libRepo.GetBook(id ?? 2),
+                Library = library,
                 PageTitle = "Library Stocks Available"
             };
 

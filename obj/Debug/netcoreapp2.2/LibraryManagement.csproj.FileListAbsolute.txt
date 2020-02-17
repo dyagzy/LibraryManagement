@@ -32,3 +32,6 @@ C:\Users\user\source\repos\LibraryManagement\bin\Debug\netcoreapp2.2\libman.json
 C:\Users\user\source\repos\LibraryManagement\obj\Debug\netcoreapp2.2\Razor\Views\Home\Create.cshtml.g.cs
 C:\Users\user\source\repos\LibraryManagement\obj\Debug\netcoreapp2.2\Razor\Views\Home\Created.cshtml.g.cs
 C:\Users\user\source\repos\LibraryManagement\obj\Debug\netcoreapp2.2\Razor\Views\Home\Edit.cshtml.g.cs
+C:\Users\user\source\repos\LibraryManagement\obj\Debug\netcoreapp2.2\Razor\Views\Home\LibraryNotFound.cshtml.g.cs
+C:\Users\user\source\repos\LibraryManagement\obj\Debug\netcoreapp2.2\Razor\Views\Shared\NotFound.cshtml.g.cs
+C:\Users\user\source\repos\LibraryManagement\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.cshtml.g.cs
