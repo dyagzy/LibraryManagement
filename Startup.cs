@@ -35,9 +35,14 @@ namespace LibraryManagement
 
             services.AddDbContextPool<AppDbContext>(
                 options => options.UseSqlServer(_config.GetConnectionString("LibraryDbConnection")));
-            services.AddIdentity<IdentityUser, IdentityRole>()
-                     .AddEntityFrameworkStores<AppDbContext>();
-            services.AddMvc();
+            services.AddIdentity<IdentityUser, IdentityRole>(options =>
+            {
+                options.Password.RequiredLength = 10;
+                options.Password.RequiredUniqueChars = 3;
+            }).AddEntityFrameworkStores<AppDbContext>();
+            
+                
+                services.AddMvc();
             services.AddScoped<ILibraryRepository, SQLLibraryRepository>();
             
         }

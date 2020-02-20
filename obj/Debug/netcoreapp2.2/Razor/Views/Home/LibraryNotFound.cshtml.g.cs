@@ -23,8 +23,13 @@ using LibraryManagement.Models;
 
 #line default
 #line hidden
+#line 3 "C:\Users\user\source\repos\LibraryManagement\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c9a46c3ba3da71f44b665de524a91e3e268960a1", @"/Views/Home/LibraryNotFound.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"6c1b5c810ba378d2f594367908e74827d74e54dd", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"43439d289d81f47412f5253f7036d136223f8c1d", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_LibraryNotFound : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<int>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-controller", "home", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -73,7 +78,7 @@ using LibraryManagement.Models;
             WriteLiteral(" cannot be found\r\n    </h5>\r\n    ");
             EndContext();
             BeginContext(240, 161, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c9a46c3ba3da71f44b665de524a91e3e268960a15233", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c9a46c3ba3da71f44b665de524a91e3e268960a15384", async() => {
                 BeginContext(335, 62, true);
                 WriteLiteral(" \r\n        Click Here to see the List of All Employees\r\n\r\n    ");
                 EndContext();

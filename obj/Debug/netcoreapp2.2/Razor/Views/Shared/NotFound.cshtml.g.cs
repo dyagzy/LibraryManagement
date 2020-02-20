@@ -23,8 +23,13 @@ using LibraryManagement.Models;
 
 #line default
 #line hidden
+#line 3 "C:\Users\user\source\repos\LibraryManagement\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"143aaf40d34a9d8ef61df33af53b9b9873cdccb5", @"/Views/Shared/NotFound.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"6c1b5c810ba378d2f594367908e74827d74e54dd", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"43439d289d81f47412f5253f7036d136223f8c1d", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_NotFound : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-controller", "home", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -80,7 +85,7 @@ using LibraryManagement.Models;
             WriteLiteral("    ");
             EndContext();
             BeginContext(116, 160, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "143aaf40d34a9d8ef61df33af53b9b9873cdccb55230", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "143aaf40d34a9d8ef61df33af53b9b9873cdccb55381", async() => {
                 BeginContext(211, 61, true);
                 WriteLiteral("\r\n        Click Here to see the List of All Employees\r\n\r\n    ");
                 EndContext();
