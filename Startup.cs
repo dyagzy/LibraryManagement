@@ -10,7 +10,6 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Identity;
 
 namespace LibraryManagement
 {
@@ -35,14 +34,7 @@ namespace LibraryManagement
 
             services.AddDbContextPool<AppDbContext>(
                 options => options.UseSqlServer(_config.GetConnectionString("LibraryDbConnection")));
-            services.AddIdentity<IdentityUser, IdentityRole>(options =>
-            {
-                options.Password.RequiredLength = 10;
-                options.Password.RequiredUniqueChars = 3;
-            }).AddEntityFrameworkStores<AppDbContext>();
-            
-                
-                services.AddMvc();
+            services.AddMvc();
             services.AddScoped<ILibraryRepository, SQLLibraryRepository>();
             
         }
@@ -65,7 +57,6 @@ namespace LibraryManagement
             
 
             app.UseStaticFiles();
-            app.UseAuthentication();
             app.UseMvcWithDefaultRoute();
             app.UseMvc(routes =>
             {

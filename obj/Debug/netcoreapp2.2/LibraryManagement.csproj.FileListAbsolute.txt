@@ -35,5 +35,3 @@ C:\Users\user\source\repos\LibraryManagement\obj\Debug\netcoreapp2.2\Razor\Views
 C:\Users\user\source\repos\LibraryManagement\obj\Debug\netcoreapp2.2\Razor\Views\Home\LibraryNotFound.cshtml.g.cs
 C:\Users\user\source\repos\LibraryManagement\obj\Debug\netcoreapp2.2\Razor\Views\Shared\NotFound.cshtml.g.cs
 C:\Users\user\source\repos\LibraryManagement\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.cshtml.g.cs
-C:\Users\user\source\repos\LibraryManagement\bin\Debug\netcoreapp2.2\nlog.config
-C:\Users\user\source\repos\LibraryManagement\obj\Debug\netcoreapp2.2\Razor\Views\Account\Register.cshtml.g.cs

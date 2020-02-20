@@ -7,7 +7,6 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
-using NLog.Extensions.Logging;
 
 namespace LibraryManagement
 {
@@ -20,16 +19,6 @@ namespace LibraryManagement
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-
-            .ConfigureLogging((hostingContent, logging) =>
-            {
-                
-                logging.AddConfiguration(hostingContent.Configuration.GetSection("Logging"));
-                logging.AddConsole();
-                logging.AddDebug();
-                logging.AddEventSourceLogger();
-                logging.AddNLog();
-            })
                 .UseStartup<Startup>();
     }
 }

@@ -1,5 +1,4 @@
-﻿using Microsoft.Extensions.Logging;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -9,12 +8,10 @@ namespace LibraryManagement.Models
     public class SQLLibraryRepository : ILibraryRepository
     {
         private readonly AppDbContext context;
-        private readonly ILogger<SQLLibraryRepository> logger;
 
-        public SQLLibraryRepository(AppDbContext context, ILogger<SQLLibraryRepository> logger)
+        public SQLLibraryRepository(AppDbContext context)
         {
             this.context = context;
-            this.logger = logger;
         }
 
         public Library Add(Library library)
@@ -41,13 +38,6 @@ namespace LibraryManagement.Models
 
         public Library GetBook(int id)
         {
-
-            logger.LogTrace("Trace Log");
-            logger.LogDebug("Debug Log");
-            logger.LogInformation("Information  Log");
-            logger.LogWarning("Warning Log");
-            logger.LogError("Error Log");
-            logger.LogCritical("Critical Log");
             return context.Libraries.Find(id);
         }
 
