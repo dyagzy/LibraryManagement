@@ -2,6 +2,7 @@
 using LibraryManagement.ViewModels;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -16,11 +17,14 @@ namespace LibraryManagement.Controllers
     {
         private readonly ILibraryRepository _libRepo;
         private readonly IHostingEnvironment hostingEnvironment;
+        private readonly ILogger logger;
 
-        public HomeController(ILibraryRepository libRepo, IHostingEnvironment hostingEnvironment)
+        public HomeController(ILibraryRepository libRepo, IHostingEnvironment hostingEnvironment
+            ,ILogger<HomeController> logger)
         {
             _libRepo = libRepo;
             this.hostingEnvironment = hostingEnvironment;
+            this.logger = logger;
         }
 
 
@@ -39,7 +43,14 @@ namespace LibraryManagement.Controllers
         public ViewResult Details(int? id)
 
         {
-            throw new Exception("Error in Details View");
+            //throw new Exception("Error in Details View");
+            logger.LogTrace("Trace Log");
+            logger.LogDebug("Debug Log");
+            logger.LogInformation("Information Log");
+            logger.LogWarning("Warning Log");
+            logger.LogCritical("Critical Log");
+
+
 
             Library library = _libRepo.GetBook(id.Value);
             if(library== null)
@@ -114,6 +125,7 @@ namespace LibraryManagement.Controllers
         {
 
             Library library = _libRepo.GetBook(id);
+            
             LibraryEditViewModel libraryEditViewModel = new LibraryEditViewModel
             {
                 Id = library.Id,

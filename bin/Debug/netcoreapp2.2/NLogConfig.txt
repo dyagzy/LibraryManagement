@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<nlog xmlns="https://www.nlog-project.org/schemas/NLog.xsd"
+	  xmlns:xsi="http://wwww.w3.org/2001/XMLSchema-instance">
+
+	  <!--The target to write to-->
+	  <targets>
+	  <target name="allfile" xsi:type="File"
+	          fileName="c://DemoLogs/nlog-all-${shortdate}.log"/>
+	  
+	  </targets>
+
+	  <rules>
+	  <logger name ="*" minilevel="Trace" writeTo="allfile "/>
+	  
+	  </rules?
+<nlog>
